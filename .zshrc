@@ -74,6 +74,12 @@ DEFAULT_USER=$USER
 # Right Prompt: Date (dd/mm/yy) + Time (24h)
 RPROMPT="[%D{%f/%m/%y} | %T]"
 
+# load custom aliases
+source ~/.bash_profile
+
+# Load z.sh plugin
+. ~/scripts/z.sh
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -102,8 +108,5 @@ RPROMPT="[%D{%f/%m/%y} | %T]"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-
-. ~/scripts/z.sh
 
 #source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
