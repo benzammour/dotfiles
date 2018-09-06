@@ -14,7 +14,7 @@ $e "\033[$[i-1];${j}H\033[32m$c\033[$i;${j}H\033[37m"$c; $s 0.1;if [ $i -ge $d ]
 then $e "\033[$[i-d];${j}H ";fi;done;for i in `eval $e {$[i-d]..$R}`; #[mat!rix]
 do echo -e "\033[$i;${j}f ";$s 0.1;done)& sleep 0.05;done #(c) 2011 -- [ BruXy ]'
 
-alias recurPull='~/Desktop/Git/scripts/gitRecursive.sh'
+alias recurPull='~/Desktop/Git/scripts/gitRecurPull.sh'
 alias recurClean='~/Desktop/Git/scripts/gitCleanUp.sh'
 alias recurSign='~/Desktop/Git/scripts/gitSign.sh'
 

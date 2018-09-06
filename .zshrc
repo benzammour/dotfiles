@@ -72,7 +72,7 @@ prompt_dir(){
 DEFAULT_USER=$USER
 
 # Right Prompt: Date (dd/mm/yy) + Time (24h)
-RPROMPT="[%D{%f/%m/%y} | %T]"
+##  RPROMPT="[%D{%f/%m/%y} | %T]"
 
 # load custom aliases
 source ~/.bash_profile
@@ -110,3 +110,6 @@ source ~/.bash_profile
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+alias lg='lazygit'
+
+eval $(thefuck --alias)
