@@ -13,11 +13,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'lervag/vimtex'
 Plugin 'morhetz/gruvbox'
-Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on
-
 
 "let g:gruvbox_gruvbox_contrast_dark = 'hard'
 
@@ -55,7 +53,7 @@ set foldenable
 set foldlevelstart=10
 
 let g:clang_use_library = 1
-" path to directory where library can be found
-"let g:clang_library_path='/usr/lib/llvm-3.8/lib'
-" or path directly to the library file
-let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
+
+" macos path lib to libclang
+"let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
+
