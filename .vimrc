@@ -11,15 +11,16 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'lervag/vimtex'
+" Colorschemes
 Plugin 'morhetz/gruvbox'
+
+Plugin 'lervag/vimtex'
 
 call vundle#end()
 filetype plugin indent on
 
-"let g:gruvbox_gruvbox_contrast_dark = 'hard'
-
 "colorscheme badwolf
+let g:gruvbox_gruvbox_contrast_dark = 'easy'
 colorscheme gruvbox
 
 syntax enable

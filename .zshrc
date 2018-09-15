@@ -2,8 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/samirbenzammour/.oh-my-zsh
+# macos
+#export ZSH=/Users/samirbenzammour/.oh-my-zsh
+# linux
+export ZSH=~/.oh-my-zsh
+export TERM="xterm-256color"
 
+export EDITOR='vim'
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -110,6 +115,23 @@ source ~/.bash_profile
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-alias lg='lazygit'
-
 eval $(thefuck --alias)
+
+alias lg='lazygit'
+alias tmntr_proj='cd ~/.config/tmuxinator'
+
+# macOS
+#alias recurPull='~/Desktop/Git/scripts/gitRecurPull.sh'
+#alias recurClean='~/Desktop/Git/scripts/gitCleanUp.sh'
+#alias recurSign='~/Desktop/Git/scripts/gitSign.sh'
+#
+#alias photoEncrypt='~/Desktop/Git/scripts/photoEncrypt.sh'
+#alias photoDecrypt='~/Desktop/Git/scripts/photoDecrypt.sh'
+
+# Linux
+alias recurPull='~/Git/scripts/gitRecurPull.sh'
+alias recurClean='~/Git/scripts/gitCleanUp.sh'
+alias recurSign='~/Git/scripts/gitSign.sh'
+
+alias photoEncrypt='~/Git/scripts/photoEncrypt.sh'
+alias photoDecrypt='~/Git/scripts/photoDecrypt.sh'
