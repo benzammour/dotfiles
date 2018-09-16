@@ -11,10 +11,12 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-" Colorschemes
-Plugin 'morhetz/gruvbox'
-
-Plugin 'lervag/vimtex'
+Plugin 'lervag/vimtex'	" latex plugin
+Plugin 'morhetz/gruvbox'	" colorscheme
+Plugin 'scrooloose/nerdtree'	" file manager
+Plugin 'Xuyuanp/nerdtree-git-plugin'	" nerdtree git plugin
+Plugin 'scrooloose/nerdcommenter'	" easier commenting
+Plugin 'valloric/YouCompleteMe'	" autocompletion (not working yet)
 
 call vundle#end()
 filetype plugin indent on
@@ -53,8 +55,5 @@ set hlsearch
 set foldenable
 set foldlevelstart=10
 
-let g:clang_use_library = 1
-
-" macos path lib to libclang
-"let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
-
+let NERDTreeShowHidden = 1	" show hidden files?
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
