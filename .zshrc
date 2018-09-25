@@ -121,17 +121,17 @@ alias lg='lazygit'
 alias tmntr_proj='cd ~/.config/tmuxinator'
 
 # macOS
-#alias recurPull='~/Desktop/Git/scripts/gitRecurPull.sh'
-#alias recurClean='~/Desktop/Git/scripts/gitCleanUp.sh'
-#alias recurSign='~/Desktop/Git/scripts/gitSign.sh'
-#
-#alias photoEncrypt='~/Desktop/Git/scripts/photoEncrypt.sh'
-#alias photoDecrypt='~/Desktop/Git/scripts/photoDecrypt.sh'
-
-# Linux
 alias recurPull='~/Git/scripts/gitRecurPull.sh'
 alias recurClean='~/Git/scripts/gitCleanUp.sh'
 alias recurSign='~/Git/scripts/gitSign.sh'
 
 alias photoEncrypt='~/Git/scripts/photoEncrypt.sh'
 alias photoDecrypt='~/Git/scripts/photoDecrypt.sh'
+
+# Linux
+#alias recurPull='~/Git/scripts/gitRecurPull.sh'
+#alias recurClean='~/Git/scripts/gitCleanUp.sh'
+#alias recurSign='~/Git/scripts/gitSign.sh'
+#
+#alias photoEncrypt='~/Git/scripts/photoEncrypt.sh'
+#alias photoDecrypt='~/Git/scripts/photoDecrypt.sh'
