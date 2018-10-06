@@ -16,7 +16,6 @@ Plugin 'morhetz/gruvbox'	" colorscheme
 Plugin 'scrooloose/nerdtree'	" file manager
 Plugin 'Xuyuanp/nerdtree-git-plugin'	" nerdtree git plugin
 Plugin 'scrooloose/nerdcommenter'	" easier commenting
-Plugin 'valloric/YouCompleteMe'	" autocompletion (not working yet)
 
 call vundle#end()
 filetype plugin indent on
@@ -56,4 +55,3 @@ set foldenable
 set foldlevelstart=10
 
 let NERDTreeShowHidden = 1	" show hidden files?
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
