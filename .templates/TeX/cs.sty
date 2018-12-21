@@ -2,13 +2,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage{ngerman}
 \usepackage{listings}
-\usepackage{amsmath, amssymb, amsthm}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.14} 
 \usepackage{cite}
 \usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
 \usepackage{enumerate}
 \renewcommand{\baselinestretch}{1.2}
+\usepackage[margin=1in]{geometry}
 
 % Rewrite commands
 \renewcommand\proofname{Beweis}
@@ -19,7 +20,11 @@
 \newcommand{\code}[1]{\texttt{#1}}
 \newcommand{\bigO}{\mathcal{O}}
 \newcommand{\abs}[1]{|#1|}
+\newcommand{\norm}[1]{||#1||}
 \newcommand{\hoare}[1]{\texttt{$\langle$\underline{#1}$\rangle$}}
+\newcommand{\tab}[1][1cm]{\hspace*{#1}}
+\newcommand{\goedel}[1]{\langle #1 \rangle}
+\newcommand{\domino}[2]{\left[\frac{#1}{#2}\right]}
 % MathBB
 \newcommand{\F}{\mathbb{F}}
 \newcommand{\N}{\mathbb{N}}
