@@ -16,12 +16,15 @@ Plugin 'morhetz/gruvbox'	" colorscheme
 Plugin 'scrooloose/nerdtree'	" file manager
 Plugin 'Xuyuanp/nerdtree-git-plugin'	" nerdtree git plugin
 Plugin 'scrooloose/nerdcommenter'	" easier commenting
+Plugin 'xuhdev/vim-latex-live-preview' " A Vim Plugin for Lively Previewing LaTeX PDF Output
+Plugin 'mpetazzoni/autopreview.vim'
 
 call vundle#end()
 filetype plugin indent on
 
 "colorscheme badwolf
-let g:gruvbox_gruvbox_contrast_dark = 'easy'
+set background=dark
+let g:gruvbox_gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
 
 syntax enable
@@ -55,3 +58,12 @@ set foldenable
 set foldlevelstart=10
 
 let NERDTreeShowHidden = 1	" show hidden files?
+let g:livepreview_previewer = 'okular'
+set updatetime=250
+
+let g:NERDTreeWinSize=20
+silent! nmap <F2> :NERDTreeToggle<CR>
+silent! map <F3> :NERDTreeFind<CR>
+
+let g:NERDTreeMapActivateNode="<F3>"
+let g:NERDTreeMapPreview="<F4>"
