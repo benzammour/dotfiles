@@ -56,7 +56,7 @@ source $ZSH/oh-my-zsh.sh
 DEFAULT_USER=$USER
 
 # Load z.sh script
-. ~/scripts/z.sh
+. ~/Git/scripts/z.sh
 
 eval $(thefuck --alias)
 
@@ -71,3 +71,7 @@ alias recurSign='~/Git/scripts/Git/gitSign.sh'
 alias photoEncrypt='~/Git/scripts/GPG/photoEncrypt.sh'
 alias photoDecrypt='~/Git/scripts/GPG/photoDecrypt.sh'
 
+alias topkek='top'
+
+alias v='vim'
+alias sv='sudo vim'
