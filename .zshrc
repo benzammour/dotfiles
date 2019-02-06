@@ -11,6 +11,7 @@ export EDITOR='vim'
 export LANG=en_US.UTF-8	# language env
 export CC="/usr/bin/gcc"	# gcc
 export CXX="/usr/bin/g++"	# g++
+export JAVAFX="/usr/local/bin/javafx/lib"
 export GPG_TTY=$(tty) #	GPG agent
 
 # start tmux at start of new terminal session
@@ -60,18 +61,4 @@ DEFAULT_USER=$USER
 
 eval $(thefuck --alias)
 
-# custom alias'
-alias lg='lazygit'
-alias tmntr_proj='cd ~/.config/tmuxinator'
-
-alias recurPull='~/Git/scripts//Git/gitRecurPull.sh'
-alias recurClean='~/Git/scripts/Git/gitCleanUp.sh'
-alias recurSign='~/Git/scripts/Git/gitSign.sh'
-
-alias photoEncrypt='~/Git/scripts/GPG/photoEncrypt.sh'
-alias photoDecrypt='~/Git/scripts/GPG/photoDecrypt.sh'
-
-alias topkek='top'
-
-alias v='vim'
-alias sv='sudo vim'
+source ~/.aliases
