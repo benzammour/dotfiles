@@ -11,8 +11,13 @@ export EDITOR='vim'
 export LANG=en_US.UTF-8	# language env
 export CC="/usr/bin/gcc"	# gcc
 export CXX="/usr/bin/g++"	# g++
-export JAVAFX="/usr/local/bin/javafx/lib"
+export JFX="$HOME/Documents/javafx/lib"
 export GPG_TTY=$(tty) #	GPG agent
+
+# go variables 
+export GOROOT=/usr/local/go	# location where go is located
+export GOPATH=$HOME/Projects/Proj1	# location of working directory
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH	# PATH variable to access go system wide
 
 # start tmux at start of new terminal session
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
@@ -52,6 +57,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source ~/.aliases
 
 # removes the username@computername in prompt
 DEFAULT_USER=$USER
@@ -60,5 +66,3 @@ DEFAULT_USER=$USER
 . ~/Git/scripts/z.sh
 
 eval $(thefuck --alias)
-
-source ~/.aliases
