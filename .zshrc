@@ -1,6 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 export ZSH=~/.oh-my-zsh
 export TERM="xterm-256color"
 export EDITOR='vim'
@@ -19,13 +16,13 @@ DEFAULT_USER=$USER
 eval $(thefuck --alias)
 
 ZSH_THEME="eastwood"
-ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_AUTOCONNECT=true
-ZSH_TMUX_AUTOQUIT=true
-ZSH_TMUX_FIXTERM=true
+#ZSH_TMUX_AUTOSTART=true
+#ZSH_TMUX_AUTOCONNECT=true
+#ZSH_TMUX_AUTOQUIT=true
+#ZSH_TMUX_FIXTERM=true
 
 plugins=(
-	z git shrink-path sudo tmux
+	z git sudo tmux
 )
 
 source ~/.aliases
