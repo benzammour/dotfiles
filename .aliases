@@ -1,14 +1,21 @@
 alias lg='lazygit'
-alias tmntr_proj='cd ~/.config/tmuxinator'
 
-alias recurPull='~/Git/scripts//Git/gitRecurPull.sh'
-alias recurClean='~/Git/scripts/Git/gitCleanUp.sh'
-alias recurSign='~/Git/scripts/Git/gitSign.sh'
+alias recurPull='~/Git/scripts//Git/gitRecurPull'
+alias recurClean='~/Git/scripts/Git/gitCleanUp'
+alias recurSign='~/Git/scripts/Git/gitSign'
 
-alias photoEncrypt='~/Git/scripts/GPG/photoEncrypt.sh'
-alias photoDecrypt='~/Git/scripts/GPG/photoDecrypt.sh'
+alias photoEncrypt='~/Git/scripts/GPG/photoEncrypt'
+alias photoDecrypt='~/Git/scripts/GPG/photoDecrypt'
 
 alias topkek='top'
 
 alias v='vim'
 alias sv='sudo vim'
+
+
+
+alias -s rb=vim
+alias -s py=vim
+alias -s java=vim
+alias -s c=vim
+alias -s cpp=vim
