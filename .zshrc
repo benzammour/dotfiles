@@ -15,7 +15,7 @@ DEFAULT_USER=$USER
 
 eval $(thefuck --alias)
 
-ZSH_THEME="eastwood"
+ZSH_THEME="ben-eastwood"
 #ZSH_TMUX_AUTOSTART=true
 #ZSH_TMUX_AUTOCONNECT=true
 #ZSH_TMUX_AUTOQUIT=true
