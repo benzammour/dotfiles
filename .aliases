@@ -7,15 +7,16 @@ alias recurSign='~/Git/scripts/Git/gitSign'
 alias photoEncrypt='~/Git/scripts/GPG/photoEncrypt'
 alias photoDecrypt='~/Git/scripts/GPG/photoDecrypt'
 
-alias topkek='top'
-
 alias v='vim'
 alias sv='sudo vim'
-
-
+alias hosts='sudo vim /etc/hosts'
 
 alias -s rb=vim
 alias -s py=vim
 alias -s java=vim
 alias -s c=vim
 alias -s cpp=vim
+
+alias x='exit'
+alias mkcd='_() { mkdir $1; cd $1; }; _'
+alias pj='python -m json.tool'
