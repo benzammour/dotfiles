@@ -31,7 +31,7 @@ filetype plugin indent on
 filetype indent on " load file specific indent files
 
 set autoindent
-set noexpandtab  " uses tabs 
+set expandtab  " uses tabs 
 set tabstop=4
 set shiftwidth=4
 " }}}
@@ -73,7 +73,6 @@ set noshowmode " doesn't show -- INSERT -- anymore
 let NERDTreeShowHidden=1	" show hidden files?
 let g:NERDTreeWinSize=20
 silent! nmap <F2> :NERDTreeToggle<CR>
-silent! map <F3> :NERDTreeFind<CR>
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeMapPreview="<F4>"
 " }}}
@@ -85,6 +84,17 @@ let g:livepreview_previewer = 'okular'	" livepreview pdf viewer
 " Lightline Config {{{
 set laststatus=2
 " }}}
+
+" Autostart Config {{{
+autocmd vimenter * NERDTree
+" }}}
+
+
+silent! map <F3> :Goyo <CR>
+
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
 
 " sets vimrc folding
 " vim:foldmethod=marker:foldlevel=0
