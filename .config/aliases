@@ -1,0 +1,18 @@
+alias lg='lazygit'
+
+# git custom commands
+alias \
+    grl='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;' \
+    ggc='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} gc \;' \
+    gsign='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} config commit.gpgsign true \;' \
+
+# general system alias
+alias \
+    v='vim' \
+    sv='sudo vim' \
+    hosts='sudo vim /etc/hosts' \
+    x='exit' \
+    mkcd='_() { mkdir $1; cd $1; }; _' \
+    cp='cp -iv' \ # i: overwrite confirm, v: show copied filenames
+    mv="mv -iv" \
+

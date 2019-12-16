@@ -6,7 +6,6 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
 
-Plugin 'lervag/vimtex'	" latex plugin
 Plugin 'scrooloose/nerdtree'	" file manager
 Plugin 'Xuyuanp/nerdtree-git-plugin'	" nerdtree git plugin
 Plugin 'scrooloose/nerdcommenter'	" easier commenting
@@ -17,10 +16,6 @@ Plugin 'tpope/vim-surround' " plugins for better management of parenthesis,
 Plugin 'jiangmiao/auto-pairs'  " brackets, quotes etc
 Plugin 'itchyny/lightline.vim'  " status line plugin
 
-Plugin 'xuhdev/vim-latex-live-preview' " A Vim Plugin for Lively Previewing LaTeX PDF Output
-Plugin 'mpetazzoni/autopreview.vim'
-
-Plugin 'flazz/vim-colorschemes'
 Plugin 'morhetz/gruvbox'	" colorscheme
 
 call vundle#end()
@@ -62,11 +57,38 @@ set number " enables line numbers
 set showcmd " shows which command one is typing 
 set cursorline " highlight current line
 set wildmenu " Visual autocomplete for command menu
-set nowrap " Doesn't wrap the lines at the end of the terminal
+set wrap " Wraps the lines at the end of the terminal
+set linebreak
 set showmatch " Matching brackets
 set mat=2  " tenths of a second to blink when matching brackets
 set updatetime=250 " update time for livepreview
 set noshowmode " doesn't show -- INSERT -- anymore 
+" }}}
+
+" Arrowkey Remap {{{ 
+" Remove newbie crutches in Command Mode
+"cnoremap <Down> <Nop>
+"cnoremap <Left> <Nop>
+"cnoremap <Right> <Nop>
+"cnoremap <Up> <Nop>
+
+" Remove newbie crutches in Insert Mode
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+inoremap <Up> <Nop>
+
+" Remove newbie crutches in Normal Mode
+nnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+nnoremap <Up> <Nop>
+
+" Remove newbie crutches in Visual Mode
+vnoremap <Down> <Nop>
+vnoremap <Left> <Nop>
+vnoremap <Right> <Nop>
+vnoremap <Up> <Nop>
 " }}}
 
 " NERDTree Config {{{
@@ -75,6 +97,7 @@ let g:NERDTreeWinSize=20
 silent! nmap <F2> :NERDTreeToggle<CR>
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeMapPreview="<F4>"
+let g:NERDTreeWinSize=30
 " }}}
 
 " Livepreview Config {{{
@@ -85,10 +108,37 @@ let g:livepreview_previewer = 'okular'	" livepreview pdf viewer
 set laststatus=2
 " }}}
 
-" Autostart Config {{{
-autocmd vimenter * NERDTree
+" Goyo Config {{{
+let g:goyo_width = 120
+
+function! s:goyo_enter()
+  set showmode
+  set number
+
+  let b:quitting = 0
+  let b:quitting_bang = 0
+  autocmd QuitPre <buffer> let b:quitting = 1
+  cabbrev <buffer> q! let b:quitting_bang = 1 <bar> q!
+endfunction
+
+function! s:goyo_leave()
+  " Quit Vim if this is the only remaining buffer
+  if b:quitting && len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 1
+    if b:quitting_bang
+      qa!
+    else
+      qa
+    endif
+  endif
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
 " }}}
 
+" Autostart Config {{{
+"autocmd vimenter * NERDTree
+" }}}
 
 silent! map <F3> :Goyo <CR>
 
