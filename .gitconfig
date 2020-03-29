@@ -1,0 +1,5 @@
+[user]
+	name = Samir Benzammour
+	email = samir@benzammour.com
+[commit]
+	gpgsign = true

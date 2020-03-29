@@ -1,11 +1,11 @@
 ZSH_THEME="ben-eastwood"
 
-plugins=(
-	z git sudo 
-)
+plugins=(z sudo)
 
-# removes the username@computername in prompt
-DEFAULT_USER=$USER
+# include hidden files in autocomplete
+_comp_options+=(globdots)
+
+HISTFILE=$ZDOTDIR/zsh_history
 
 source $HOME/.config/aliases
 source $ZSH/oh-my-zsh.sh
