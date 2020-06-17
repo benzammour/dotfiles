@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=KeePassXC
+Comment=Passwort Manager
+Exec=/opt/keepassxc/keepassxc %u
+Terminal=false
+Type=Application
+StartupNotify=true

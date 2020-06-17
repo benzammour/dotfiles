@@ -7,7 +7,8 @@ alias g='git' \
 	gp='git push' \
 	gl='git pull' \
 	gb='git branch' \
-	glog='git log --oneline --decorate --graph'
+	glog='git log --oneline --decorate --graph' \
+	gcl='git clone'
 
 # git custom commands
 alias \
@@ -21,5 +22,6 @@ alias \
     sv='sudo vim' \
     x='exit' \
     cp='cp -iv' \ # i: overwrite confirm, v: show copied filenames
-    mv="mv -iv"
+    mv='mv -iv' \
 
+alias xclip="xclip -selection clipboard"

@@ -37,10 +37,10 @@
 *color15: #ebdbb2
 
 ! Font Setup
-*.font: xft:SauceCodePro Nerd Font:style=Regular:size=10
-*.boldFont: xft:SauceCodePro Nerd Font:style=Bold:size=10
-*.italicFont: xft:SauceCodePro Nerd Font:style=Italic:size=10
-*.boldItalicFont: xft:SauceCodePro Nerd Font:style=Bold Italic:size=10
+*.font: xft:Source Code Pro for Powerline:style=Regular:size=11
+*.boldFont: xft:Source Code Pro for Powerline:style=Bold:size=11
+*.italicFont: xft:Source Code Pro for Powerline:style=Italic:size=11
+*.boldItalicFont: xft:Source Code Pro for Powerline:style=Bold Italic:size=11
 
 ! ------------------------------ URxvt
 URxvt.letterSpace: 0
@@ -53,7 +53,7 @@ URxvt.urgentOnBell: true
 
 URxvt.transparent: true
 URxvt.tintColor: white
-URxvt.shading: 40
+URxvt.shading: 60
 URxvt*blurRadius: 13x13
 
 urxvt.perl-ext-common: default,resize-font
