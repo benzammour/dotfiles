@@ -53,7 +53,7 @@ URxvt.urgentOnBell: true
 
 URxvt.transparent: true
 URxvt.tintColor: white
-URxvt.shading: 60
+URxvt.shading: 30
 URxvt*blurRadius: 13x13
 
 urxvt.perl-ext-common: default,resize-font
