@@ -25,6 +25,6 @@ font:
   bold_italic:
     family:  SauceCodePro Nerd Font Mono
     style: Bold Italic
-  size: 14.0
+  size: 10.0
 
 live_config_reload: true
