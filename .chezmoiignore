@@ -1,0 +1,10 @@
+README*
+LICENSE*
+
+# Neovim
+**/autoload/
+**/autoload/**/*
+**/plugged/
+**/plugged/**/*
+**/yankring_history*.txt
+**/nvim/lazy-lock.json
