@@ -1,8 +1,0 @@
-$recorder = 1;
-$bibtex_use = 2;
-$pdf_mode = 5;
-$dvi_mode = $postscript_mode = 0;
-
-$dvi_previewer = 'start xdvi -watchfile 1.5';
-$ps_previewer  = 'start zathura';
-$pdf_previewer = 'start zathura';

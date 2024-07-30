@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Flux Applet
-Comment=Better lighting for your computer
-Terminal=false
-Icon=fluxgui
-Exec=fluxgui
-Type=Application
-Categories=Utility;
-
