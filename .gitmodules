@@ -1,3 +1,3 @@
 [submodule "dot_config/nvim"]
 	path = dot_config/nvim
-	url = git@github.com:benzammour/nvim.git
+	url = https://github.com/benzammour/nvim.git
