@@ -209,6 +209,7 @@ bindsym Print exec flameshot gui
 
 # set i3lock keybinding
 bindsym $mod+l exec i3lock -t -i ~/Pictures/blue.jpg
+bindsym $mod+shift+p exec profi
 # one monitor setup
 # bindsym $mod+l exec xwd -root | convert xwd:- -remap pattern:gray50 -blur 0x8 RGB:- | i3lock -t --raw 1920x1200:rgb --image /dev/stdin 
 
