@@ -183,7 +183,7 @@ gaps inner 10
 for_window [class="^.*"] border pixel 2
 
 # set desktop background
-exec --no-startup-id xwallpaper --maximize $HOME/Pictures/blue.jpg
+exec --no-startup-id xwallpaper --zoom $HOME/Pictures/blue.jpg
 
 # execute keepass and owncloud upon startup
 exec --no-startup-id i3-msg 'workspace 9; exec /usr/bin/keepassxc'
