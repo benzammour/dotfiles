@@ -183,7 +183,7 @@ gaps inner 10
 for_window [class="^.*"] border pixel 2
 
 # set desktop background
-exec --no-startup-id xwallpaper --maximize $HOME/Pictures/purple-black-circles.jpg
+exec --no-startup-id xwallpaper --maximize $HOME/Pictures/blue.jpg
 
 # execute keepass and owncloud upon startup
 exec --no-startup-id i3-msg 'workspace 9; exec /usr/bin/keepassxc'
@@ -208,7 +208,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightnes
 bindsym Print exec flameshot gui
 
 # set i3lock keybinding
-bindsym $mod+l exec i3lock -t -i ~/Pictures/japanese-street.png
+bindsym $mod+l exec i3lock -t -i ~/Pictures/blue.jpg
 # one monitor setup
 # bindsym $mod+l exec xwd -root | convert xwd:- -remap pattern:gray50 -blur 0x8 RGB:- | i3lock -t --raw 1920x1200:rgb --image /dev/stdin 
 
