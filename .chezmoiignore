@@ -7,4 +7,3 @@ LICENSE*
 **/plugged/
 **/plugged/**/*
 **/yankring_history*.txt
-**/nvim/lazy-lock.json
